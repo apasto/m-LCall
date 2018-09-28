@@ -1,5 +1,5 @@
 # m-LCall
-Matlab functions to query the LITHO1.0 model (Pasyanos, Masters, Laske, & Ma (2014), [doi: 10.1002/2013JB010626](https://doi.org/10.1002/2013JB010626)) pointwise and import it in Matlab on regularly sampled meshgrids.
+Matlab functions to parse the plaintext output of the access utility of LITHO1.0 (Pasyanos, Masters, Laske, & Ma (2014), [doi: 10.1002/2013JB010626](https://doi.org/10.1002/2013JB010626)) and import it in Matlab on regularly sampled meshgrids.
 
 ## Disclaimer
 I am not affiliated with, nor endorsed by, the aforementioned Authors of the LITHO1.0 model.
