@@ -1,4 +1,4 @@
-# m-LithoCall
+# m-LCall
 Matlab functions to query the LITHO1.0 model (Pasyanos, Masters, Laske, & Ma (2014), [doi: 10.1002/2013JB010626](https://doi.org/10.1002/2013JB010626)) pointwise and import it in Matlab on regularly sampled meshgrids.
 
 ## Disclaimer
@@ -20,24 +20,24 @@ Should be OCTAVE-compatible, but this was not tested for.
 ## Installing
 
 Add the repository folder (the one that this README is in) to your MATLAB® path.
-The contents of './+LithoCall' will be then available as a 'package directory'.
+The contents of './+LCall' will be then available as a 'package directory'.
 
-`LithoCall.` must be prefixed to the called function.
+`LCall.` must be prefixed to the called function.
 
 Example:
 
 ```matlab
-LithoCall.GetProfile(lat,lon,path)
+LCall.GetProfile(lat,lon,path)
 ```
 
 ## Using
 
 ### GetProfile
 
-Call directly **LithoCall.GetProfile** to get the parsed output of a profile query at a point.
+Call directly **LCall.GetProfile** to get the parsed output of a profile query at a point.
 
 ```text
-Usage: [Depths,Rhos,Vp,Vs,(Names)] = LithoProfile(lat,lon,(SystemFlag))
+Usage: [Depths,Rhos,Vp,Vs,(Names)] = LCall.GetProfile(lat,lon,(SystemFlag))
            Depths, Rhos, Names are complete to a 10-layer model
            suitable to obtain a depth- and Rho-map for each layer
            including missing (=zero-thickness) ones
@@ -55,10 +55,10 @@ Output: Depths  : depth in metres for each layer, positive downwards
 
 ### MakeMaps
 
-Use **LithoCall.MakeMaps** to run GetProfile on a regular grid, obtaining layer depths, densities and velocities.
+Use **LCall.MakeMaps** to run GetProfile on a regular grid, obtaining layer depths, densities and velocities.
 
 ```text
-Usage: [Lat,Lon,DepthMap,RhoMap,VpMap,VsMap] = LithoCall(LatRange,LonRange,step)
+Usage: [Lat,Lon,DepthMap,RhoMap,VpMap,VsMap] = LCall.MakeMaps(LatRange,LonRange,step)
 
 Input: LatRange : latitude range, as [lat min, lat max]
                       degrees [-90,90] increasing
