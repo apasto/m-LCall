@@ -4,7 +4,7 @@ function [Lat,Lon,DepthMap,RhoMap,VpMap,VsMap] = MakeMaps(LatRange,LonRange,step
 %                   using a system call to "access_litho" binary
 %                   "profile mode" (-p lat lon) is called on a regular grid
 %
-% Usage: [Lat,Lon,DepthMap,RhoMap,VpMap,VsMap] = LithoCall(LatRange,LonRange,step)
+% Usage: [Lat,Lon,DepthMap,RhoMap,VpMap,VsMap] = LCall.MakeMaps(LatRange,LonRange,step)
 %
 % Input: LatRange : latitude range, as [lat min, lat max]
 %                       degrees [-90,90] increasing

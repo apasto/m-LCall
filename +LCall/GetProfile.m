@@ -1,15 +1,15 @@
-function [Depths,Rhos,Vp,Vs,varargout] = GetProfile(lat,lon,LithoPath)
+function [Depths,Rhos,Vp,Vs,varargout] = GetProfile(lat,lon,BinPath)
 %LithoCall.GetProfile do a system call to "access_litho" binary and extract profile
 % from Litho1.0 (Pasyanos et. al 2014, doi: 10.1002/2013JB010626)
 %
-% Usage: [Depths,Rhos,Vp,Vs,(Names)] = LithoProfile(lat,lon,(SystemFlag))
+% Usage: [Depths,Rhos,Vp,Vs,(Names)] = LCall.GetProfile(lat,lon,(SystemFlag))
 %            Depths, Rhos, Names are complete to a 10-layer model
 %            suitable to obtain a depth- and Rho-map for each layer
 %            including missing (=zero-thickness) ones
 %
 % Input: lat       : scalar, latitude (deg)
 %        lon       : scalar, longitude (deg)
-%        LithoPath : string, path to access_litho, including trailing (back)slash
+%        BinPath : string, path to access_litho, including trailing (back)slash
 %
 % Output: Depths  : depth in metres for each layer, positive downwards
 %         Rhos    : density in kg/m3 for each layer, AIR rho set to 0
@@ -23,7 +23,7 @@ narginchk(3,3)
 nargoutchk(4,5)
 
 %% parse access_litho output
-CallString = [LithoPath,'access_litho.exe -p ',num2str(lat),' ',num2str(lon)];
+CallString = [BinPath,'access_litho.exe -p ',num2str(lat),' ',num2str(lon)];
 % [depth density Vp Vs Qkappa Qmu Vp2 Vs2 eta layername]
 [CallStatus,Profile] = system(CallString);
 
