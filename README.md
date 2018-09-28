@@ -1,8 +1,11 @@
 # m-LithoCall
 Matlab functions to query LITHO1.0 (Pasyanos, Masters, Laske, & Ma (2014), [doi: 10.1002/2013JB010626](https://doi.org/10.1002/2013JB010626)) pointwise and import it in Matlab on regularly sampled meshgrids.
 
-**Disclaimer:** I am not affiliated with, nor endorsed by, the aforementioned Authors of the LITHO1.0 model.
+## Disclaimer
+I am not affiliated with, nor endorsed by, the aforementioned Authors of the LITHO1.0 model.
 This is a tool to parse the output of the provided model-querying utility (access_litho) and translate it into different data structures.
+
+I do not guarantee that the model integrity is conserved by my functions - it is very likely that some re-sampling artefacts are introduced.
 
 ## Prerequisites
 
