@@ -2,7 +2,7 @@ function [Depths,Rhos,Vp,Vs,varargout] = GetProfile(lat,lon,BinPath)
 %LithoCall.GetProfile do a system call to "access_litho" binary and extract profile
 % from Litho1.0 (Pasyanos et. al 2014, doi: 10.1002/2013JB010626)
 %
-% Usage: [Depths,Rhos,Vp,Vs,(Names)] = LCall.GetProfile(lat,lon,(SystemFlag))
+% Usage: [Depths,Rhos,Vp,Vs,(Names)] = LCall.GetProfile(lat,lon,BinPath)
 %            Depths, Rhos, Names are complete to a 10-layer model
 %            suitable to obtain a depth- and Rho-map for each layer
 %            including missing (=zero-thickness) ones
