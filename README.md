@@ -37,14 +37,14 @@ LCall.GetProfile(lat,lon,path)
 Call directly **LCall.GetProfile** to get the parsed output of a profile query at a point.
 
 ```text
-Usage: [Depths,Rhos,Vp,Vs,(Names)] = LCall.GetProfile(lat,lon,(SystemFlag))
+Usage: [Depths,Rhos,Vp,Vs,(Names)] = LCall.GetProfile(lat,lon,BinPath)
            Depths, Rhos, Names are complete to a 10-layer model
            suitable to obtain a depth- and Rho-map for each layer
            including missing (=zero-thickness) ones
 
 Input: lat       : scalar, latitude (deg)
        lon       : scalar, longitude (deg)
-       LithoPath : string, path to access_litho, including trailing (back)slash
+       BinPath : string, path to access_litho, including trailing (back)slash
 
 Output: Depths  : depth in metres for each layer, positive downwards
         Rhos    : density in kg/m3 for each layer, AIR rho set to 0
