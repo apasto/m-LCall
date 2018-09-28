@@ -4,6 +4,7 @@ Matlab functions to query the LITHO1.0 model (Pasyanos, Masters, Laske, & Ma (20
 ## Disclaimer
 I am not affiliated with, nor endorsed by, the aforementioned Authors of the LITHO1.0 model.
 This is a tool to parse the output of the provided model-querying utility (access_litho) and translate it into different data structures.
+No part of the model or of access_litho is included in this repository.
 
 I do not guarantee that the model integrity is conserved by my functions - it is very likely that some re-sampling artefacts are introduced.
 
