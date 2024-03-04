@@ -3,7 +3,8 @@
 ## Deprecation note
 
 While implementing this, I noticed that Python package [stripy](https://pypi.org/project/stripy/), with its bundled `litho1pt0` interface, does a WAY BETTER job at this task than I was attempting to.
-Anyway, it has been a nice excercise and there is no point in... hiding it :)
+
+Anyway, this has been a nice exercise and in my opinion there is no point in... hiding it :)
 
 ## Description
 
