@@ -1,4 +1,12 @@
 # m-LCall
+
+## Deprecation note
+
+While implementing this, I noticed that Python package [stripy](https://pypi.org/project/stripy/), with its bundled `litho1pt0` interface, does a WAY BETTER job at this task than I was attempting to.
+Anyway, it has been a nice excercise and there is no point in... hiding it :)
+
+## Description
+
 Matlab functions to parse the plaintext output of the access utility of LITHO1.0 (Pasyanos, Masters, Laske, & Ma (2014), [doi: 10.1002/2013JB010626](https://doi.org/10.1002/2013JB010626)) and import it in Matlab on regularly sampled meshgrids.
 
 ## Disclaimer
